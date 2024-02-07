@@ -8,6 +8,9 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
+    chosen { 
+      zmk,matrix_transform = &five_column_transform; 
+       };
     keymap {
         compatible = "zmk,keymap";
 
@@ -113,8 +116,7 @@
     };
 };
 
-/
-
+/ {
     macros {
         u_macro_u_bt_sel_0: u_macro_u_bt_sel_0 {
             label = "ZM_u_macro_u_bt_sel_0";
@@ -265,8 +267,7 @@
     };
 };
 
-/
-
+/ {
     behaviors {
         u_to_U_BASE: u_to_U_BASE {
             compatible = "zmk,behavior-tap-dance";
@@ -386,8 +387,8 @@
     };
 };
 
-/
 
+/ {
     macros {
         u_macro_btn1: u_macro_btn1 {
             label = "ZM_u_macro_btn1";
@@ -423,8 +424,7 @@
     };
 };
 
-/
-
+/ {
     behaviors {
         u_mt: u_mt {
             compatible = "zmk,behavior-hold-tap";
@@ -445,7 +445,4 @@
         };
     };
 };
-/ {
-    chosen { zmk,matrix_transform = &five_column_transform; };
-}
 
