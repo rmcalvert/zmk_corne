@@ -280,9 +280,8 @@ bindings = <&kp KP_ASTERISK &kp KP_N5>;
     };
   };
 };
-/ {
+/ { 
   chosen {
-    # zmk,matrix_transform = &five_column_transform;
     zmk,matrix_transform = &default_transform;
   };
 };
