@@ -446,6 +446,6 @@
     };
 };
 / {
-    chosen { zmk,matrix_transform = &default_transform; };
+    chosen { zmk,matrix_transform = &five_column_transform; };
 }
 
